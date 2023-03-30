@@ -2,11 +2,30 @@
 <html>
 <head>
  
+<script type="text/javascript">
+	function userAgent(){
+ 		let get = navigator.userAgent;
+ 		document.getElementById("usag").innerHTML = "User-agent is: " + get;
+	}
+	function getHeader(){
+ 		document.getElementById("usag").innerHTML = "User-agent is: " + req.headers;
+	}
+</script>
 <body>
  
-<a href="https://m.facebook.com">Deeplink 0320</a>
+<a href="https://m.facebook.com">Deeplink 0320</a><br><br>
+
+
+<button onclick="userAgent()">Click to get User Agent</button>
+<h3 id="usag" style="background-color: lightblue;">Get Agent</h3>
+
+
+<!-- <button onclick="getHeader()">Click to get header</button> -->
+<!-- <h3 id="header" style="background-color: lightblue;">Get Header</h3> -->
+
  
 </body>
+
  
 </head>
  
