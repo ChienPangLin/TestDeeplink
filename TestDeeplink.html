@@ -2,11 +2,37 @@
 <html>
 <head>
  
+<script type="text/javascript">
+	function userAgent(){
+		let str =navigator.userAgent;
+ 		document.getElementById("usag").innerHTML = "" + str;
+	}
+	function getCurrentURL () {
+		let str = window.location.href
+ 		document.getElementById("usag").innerHTML = "" + str;
+	}
+	function getRefereer(){
+		let str = document.referrer;
+ 		document.getElementById("usag").innerHTML = "" + str;
+	}
+</script>
 <body>
  
-<a href="jp.unext.vr://page=nextbrowservr/help">Deeplink</a>
+<a href="https://m.facebook.com">Deeplink 0320</a><br><br>
+
+
+<h3 id="usag" style="background-color: lightblue;">Get Agent</h3>
+<button onclick="userAgent()">Click to get User Agent</button><br><br>
+<button onclick="getCurrentURL()">Click to get url</button><br><br>
+<button onclick="getRefereer()">Click to get refereer</button><br><br>
+
+
+<!-- <button onclick="getHeader()">Click to get header</button> -->
+<!-- <h3 id="header" style="background-color: lightblue;">Get Header</h3> -->
+
  
 </body>
+
  
 </head>
  
