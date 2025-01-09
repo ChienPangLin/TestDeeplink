@@ -3,6 +3,9 @@
 <head>
  
 <script type="text/javascript">
+	addEventListener("scroll", (event) => {
+		window.vuplex.postMessage("send message from webpage scroll");
+	});
 	function userAgent(){
 		let str =navigator.userAgent;
  		document.getElementById("usag").innerHTML = "" + str;
@@ -16,7 +19,7 @@
  		document.getElementById("usag").innerHTML = "" + str;
 	}
 	function sendMessageToVuplex(){
-		window.vuplex.postMessage("send message from webpage");
+		window.vuplex.postMessage("send message from webpage button");
 	}
 </script>
 <body>
@@ -29,7 +32,9 @@
 <button onclick="getCurrentURL()">Click to get url</button><br><br>
 <button onclick="getRefereer()">Click to get refereer</button><br><br>
 <button onclick="sendMessageToVuplex()">Click to post message</button><br><br>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<button onclick="sendMessageToVuplex()">Click to post message</button><br><br>
 
 <!-- <button onclick="getHeader()">Click to get header</button> -->
 <!-- <h3 id="header" style="background-color: lightblue;">Get Header</h3> -->
