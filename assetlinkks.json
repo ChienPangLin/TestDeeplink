@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.use_as_origin"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "jp.unext.vr.browserplayer",
+      "sha256_cert_fingerprints": [
+        "39:88:23:17:6B:22:A3:D3:06:47:AF:0B:F0:DF:F2:2C:11:FE:1F:26:CF:0F:C5:B0:E1:F2:ED:BF:A1:32:59:C0"
+      ]
+    }
+  }
+]

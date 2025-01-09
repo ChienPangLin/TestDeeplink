@@ -15,6 +15,9 @@
 		let str = document.referrer;
  		document.getElementById("usag").innerHTML = "" + str;
 	}
+	function sendMessageToVuplex(){
+		window.vuplex.postMessage("send message from webpage");
+	}
 </script>
 <body>
  
@@ -25,6 +28,7 @@
 <button onclick="userAgent()">Click to get User Agent</button><br><br>
 <button onclick="getCurrentURL()">Click to get url</button><br><br>
 <button onclick="getRefereer()">Click to get refereer</button><br><br>
+<button onclick="sendMessageToVuplex()">Click to post message</button><br><br>
 
 
 <!-- <button onclick="getHeader()">Click to get header</button> -->
